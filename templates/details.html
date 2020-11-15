@@ -1,0 +1,11 @@
+{% extends "base.html" %}
+
+{% block container %}
+<h2 class="text-center">All the posts details</h2>
+<ul>
+  {% for post in posts %}
+  <li>{{ post.id }} - {{ post.title }}</li>
+  <li>{{ post.body }}</li>
+  {% endfor %}
+</ul>
+{% endblock container %}

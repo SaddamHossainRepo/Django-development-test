@@ -1,0 +1,12 @@
+{% extends "base.html" %}
+
+{% block container %}
+<h2 class="text-center">All the posts from JSON placeholder</h2>
+<ul>
+  {% for post in posts %}
+  <ol> ID: {{ post.id }} </ol>
+  <ol>  Tittle: {{ post.title }}</ol>
+  <ol>Body: {{ post.body }}</ol><br>
+  {% endfor %}
+</ul>
+{% endblock container %}
